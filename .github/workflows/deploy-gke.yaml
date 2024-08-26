@@ -1,5 +1,5 @@
 
-name: Build and Deploy to GKE
+name: Build and Deploy to GKE github Actions
 
 on:
   push:
