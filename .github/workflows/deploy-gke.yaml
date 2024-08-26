@@ -5,7 +5,6 @@ on:
   push:
     branches:
       - main
-
 env:
   PROJECT_ID: asif-praveen-gke2
   PROJECT_NUMBER: 175417543474
@@ -28,12 +27,7 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v3
-    - name: Set up .NET Core
-      uses: actions/setup-dotnet@v3
-      with:
-          dotnet-version: '6.0'
 
-    #
     # Authenticate to Google Cloud using workload identity federation
     #
     - id: 'auth'
